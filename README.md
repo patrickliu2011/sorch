@@ -53,5 +53,4 @@ This will run all the linters on all the files in the repository, not just the o
 
 ## Contact
 
-Patrick Liu  
-patrickliu2011@gmail.com
+Patrick Liu
