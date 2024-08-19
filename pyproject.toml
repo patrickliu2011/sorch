@@ -1,0 +1,45 @@
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sorch"
+version = "0.1.0"
+description = ""
+authors = ["Patrick Liu <patrickliu2011@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pinecone-client = "^4.1.2"
+torch = "^2.3.1"
+transformers = "^4.42.4"
+tqdm = "^4.66.4"
+fire = "^0.6.0"
+streamlit = "^1.37.0"
+
+[tool.poetry.dev-dependencies]
+ipykernel = "^6.29.5"
+pytest = "^8.0"
+pre-commit = "^3.6"
+coverage = "^7.4"
+pytest-timeout = "^2.3"
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 2
+line_length = 120
+profile = "black"
+use_parentheses = true
+
+[tool.autoflake]
+in-place = true
+remove_all_unused_imports = true
+remove-unused-variables = true
+
+[tool.ruff]
+line-length = 120
